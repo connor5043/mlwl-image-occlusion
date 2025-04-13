@@ -8,7 +8,7 @@ Build with `make`
 
 Install per-user with `make install`
 
-Usage: `./mlwl-image-occlusion <image_path>`
+Usage: `mlwl-image-occlusion <image_path>`
 
 For this to work, your MLWL course needs to be set up with Picture as the first column and Word as the second column.
 
