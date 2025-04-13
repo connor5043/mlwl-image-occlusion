@@ -514,6 +514,14 @@ int main(int argc, char *argv[]) {
             break;
         }
     }
+    
+    char course_id_str[16]; // Buffer to hold the COURSE_ID string
+    char column_id_str[16]; // Buffer to hold the COLUMN_ID string
+    sprintf(course_id_str, "%d", selected_course_id);
+    sprintf(column_id_str, "%d", column_id);
+    setenv("COURSE_ID", course_id_str, 1);
+    setenv("COLUMN_ID", column_id_str, 1);
+    setenv("AUTH_TOKEN", auth_token, 1);
 
     if (debug_mode) {
         // In debug mode, execute the script in the current process and show output
